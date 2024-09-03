@@ -1,0 +1,412 @@
+﻿﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="card">
+            <div class="card-header">Punto de Venta</div>
+            <div class="card-body">
+
+                <button class="btn btn-success" id="btnNuevo">Nuevo Articulo</button>
+
+                <hr />
+
+                <table class="table table-striped" id="tbArticulo">
+                    <thead>
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                            <th>Imagen</th>
+                            <th>Stock</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+                <button class="btn btn-success" id="btnNuevoCliente">Nuevo Cliente</button>
+                <table class="table table-striped" id="tbCliente">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Direccion</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--Fin tarjeta-->
+
+    </div>
+</div>
+
+
+
+<!--Inicio Modal-->
+<div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detalle Articulo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="txtArticuloId" value="0" />
+                <div class="mb-2">
+                    <label>Codigo</label>
+                    <input type="text" class="form-control" id="txtCodigo" />
+                </div>
+                <div class="mb-2">
+                    <label>Descripcion</label>
+                    <input type="text" class="form-control" id="txtDescripcion" />
+                </div>
+                <div class="mb-2">
+                    <label>Precio</label>
+                    <input type="text" class="form-control" id="txtPrecio" />
+                </div>
+                <div class="mb-2">
+                    <label>Imagen</label>
+                    <input type="text" class="form-control" id="txtImagen" />
+                </div>
+                <div class="mb-2">
+                    <label>Stock</label>
+                    <input type="text" class="form-control" id="txtStock" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnGuardar">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detalle Cliente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="txtClienteId" value="0" />
+                <div class="mb-2">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="txtNombre" />
+                </div>
+                <div class="mb-2">
+                    <label>Apellidos</label>
+                    <input type="text" class="form-control" id="txtApellidos" />
+                </div>
+                <div class="mb-2">
+                    <label>Dirección</label>
+                    <input type="text" class="form-control" id="txtDireccion" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnGuardarCliente">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Fin Modal-->
+@section Scripts {
+
+    <script>
+
+        const Modelo_base = {
+            articuloId: 0,
+            codigo: "",
+            descripcion: "",
+            precio: 0.00,
+            imagen: "",
+            stock: ""
+        }
+
+        $(document).ready(() => {
+
+            listaArticulos();
+        })
+      
+        function mostrarModal(modelo) {
+
+            $("#txtArticuloId").val(modelo.articuloId)
+            $("#txtCodigo").val(modelo.codigo)
+            $("#txtDescripcion").val(modelo.descripcion)
+            $("#txtPrecio").val(modelo.precio)
+            $("#txtImagen").val(modelo.imagen)
+            $("#txtStock").val(modelo.stock)
+
+
+            $('.modal').modal('show');
+        }
+
+        $("#btnNuevo").click(() => {
+
+            mostrarModal(Modelo_base);
+        })
+
+        $("#btnGuardar").click(() => {
+            let NuevoModelo = {
+                articuloId: parseInt($("#txtArticuloId").val()),
+                codigo: $("#txtCodigo").val(),
+                descripcion: $("#txtDescripcion").val(),
+                precio: parseFloat($("#txtPrecio").val()),
+                imagen: $("#txtImagen").val(), // Si la imagen necesita conversión, hazlo aquí
+                stock: parseInt($("#txtStock").val())
+            };
+
+            if ($("#txtArticuloId").val() == "0") {
+                fetch("Home/Insertar", {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify(NuevoModelo)
+                })
+                    .then((response) => {
+                        return response.ok ? response.json() : Promise.reject(response)
+                    })
+                    .then((dataJson) => {
+
+                        if (dataJson.valor) {
+                            alert("registrado");
+                            $('.modal').modal('hide');
+                            listaArticulos();
+                        }
+                    })
+            } else {
+                fetch("Home/Actualizar", {
+                    method: "PUT",
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify(NuevoModelo)
+                })
+                    .then((response) => {
+                        return response.ok ? response.json() : Promise.reject(response)
+                    })
+                    .then((dataJson) => {
+
+                        if (dataJson.valor) {
+                            alert("editado");
+                            $('.modal').modal('hide');
+                            listaArticulos();
+                        }
+                    })
+
+            }
+
+        })
+
+       
+
+         function listaArticulos() {
+
+            fetch("Home/Lista")
+                .then((response) => {
+                    return response.ok ? response.json() : Promise.reject(response)
+                })
+                .then((dataJson) => {
+
+                    $("#tbArticulo tbody").html("");
+
+                    dataJson.forEach((item) => {
+
+                        $("#tbArticulo tbody").append(
+                            $("<tr>").append(
+                                $("<td>").text(item.codigo),
+                                    $("<td>").text(item.descripcion),
+                                    $("<td>").text(item.precio),
+                                    $("<td>").text(item.imagen),
+                                    $("<td>").text(item.stock),
+                                    $("<td>").append(
+                                        $("<button>").addClass("btn btn-primary btn-sm me-2 btn-editar").data("modelo", item).text("Editar"),
+                                        $("<button>").addClass("btn btn-danger btn-sm btn-eliminar").data("articuloId", item.articuloId).text("Eliminar")
+                                    )
+                                )
+                            )
+
+                            })
+
+
+                })
+
+
+        }
+
+        $("#tbArticulo tbody").on("click", ".btn-editar", function () {
+            let articulo = $(this).data("modelo")
+
+            mostrarModal(articulo)
+        })
+
+
+        $("#tbArticulo tbody").on("click", ".btn-eliminar", function () {
+            let idArticulo = $(this).data("articuloId")
+            console.log(idArticulo); // Verifica que este valor no sea undefined
+
+            let resultado = window.confirm("¿Desea eliminar el contacto?");
+
+
+            if (resultado) {
+
+
+                fetch("Home/Eliminar?articuloId=" + idArticulo, {
+                    method: "DELETE"
+                })
+                    .then((response) => {
+                        return response.ok ? response.json() : Promise.reject(response)
+                    })
+                    .then((dataJson) => {
+
+                        if (dataJson.valor) {
+                            listaArticulos();
+                        }
+                    })
+
+
+            }
+
+
+        })
+
+
+
+
+        const Modelo_base1= {
+            clienteId: 0,
+            nombre: "",
+            apellidos: "",
+            direccion: ""
+        }
+
+        $(document).ready(() => {
+            listaClientes();
+        })
+        
+        function mostrarModalC(modelo) {
+            $("#txtClienteId").val(modelo.clienteId)
+            $("#txtNombre").val(modelo.nombre)
+            $("#txtApellidos").val(modelo.apellidos)
+            $("#txtDireccion").val(modelo.direccion)
+
+            $('.modal').modal('show');
+        }
+
+        $("#btnNuevoCliente").click(() => {
+            mostrarModalC(Modelo_base1);
+        })
+
+        $("#btnGuardarCliente").click(() => {
+            let NuevoModelo = {
+                clienteId: parseInt($("#txtClienteId").val()),
+                nombre: $("#txtNombre").val(),
+                apellidos: $("#txtApellidos").val(),
+                direccion: $("#txtDireccion").val()
+            };
+
+            if ($("#txtClienteId").val() == "0") {
+                fetch("Home/InsertarCliente", {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify(NuevoModelo)
+                })
+                .then((response) => {
+                    return response.ok ? response.json() : Promise.reject(response)
+                })
+                .then((dataJson) => {
+                    if (dataJson.valor) {
+                        alert("Cliente registrado");
+                        $('.modal').modal('hide');
+                        listaClientes();
+                    }
+                })
+            } else {
+                fetch("Home/ActualizarCliente", {
+                    method: "PUT",
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify(NuevoModelo)
+                })
+                .then((response) => {
+                    return response.ok ? response.json() : Promise.reject(response)
+                })
+                .then((dataJson) => {
+                    if (dataJson.valor) {
+                        alert("Cliente editado");
+                        $('.modal').modal('hide');
+                        listaClientes();
+                    }
+                })
+            }
+        })
+
+        function listaClientes() {
+            fetch("Home/ListaCliente")
+                .then((response) => {
+                    return response.ok ? response.json() : Promise.reject(response)
+                })
+                .then((dataJson) => {
+                    $("#tbCliente tbody").html("");
+
+                    dataJson.forEach((item) => {
+                        $("#tbCliente tbody").append(
+                            $("<tr>").append(
+                                $("<td>").text(item.nombre),
+                                $("<td>").text(item.apellidos),
+                                $("<td>").text(item.direccion),
+                                $("<td>").append(
+                                    $("<button>").addClass("btn btn-primary btn-sm me-2 btn-editar").data("modelo", item).text("Editar"),
+                                    $("<button>").addClass("btn btn-danger btn-sm btn-eliminar").data("clienteId", item.clienteId).text("Eliminar")
+                                )
+                            )
+                        )
+                    })
+                })
+        }
+
+        $("#tbCliente tbody").on("click", ".btn-editar", function () {
+            let cliente = $(this).data("modelo")
+            mostrarModalC(cliente)
+        })
+
+        $("#tbCliente tbody").on("click", ".btn-eliminar", function () {
+            let idCliente = $(this).data("clienteId")
+            console.log(idCliente); // Verifica que este valor no sea undefined
+
+            let resultado = window.confirm("¿Desea eliminar el cliente?");
+
+            if (resultado) {
+                fetch("Home/EliminarCliente?clienteId=" + idCliente, {
+                    method: "DELETE"
+                })
+                .then((response) => {
+                    return response.ok ? response.json() : Promise.reject(response)
+                })
+                .then((dataJson) => {
+                    if (dataJson.valor) {
+                        listaClientes();
+                    }
+                })
+            }
+        })
+    </script>
+}
+
+
+

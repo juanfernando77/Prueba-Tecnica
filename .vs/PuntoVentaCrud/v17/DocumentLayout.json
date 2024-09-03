@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A03EBFE-4DAD-4A12-A835-5F960BE0B64F}|PuntoVenta.AppWeb\\PuntoVenta.AppWeb.csproj|c:\\users\\juan_\\desktop\\puntoventacrud\\puntoventa.appweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A03EBFE-4DAD-4A12-A835-5F960BE0B64F}|PuntoVenta.AppWeb\\PuntoVenta.AppWeb.csproj|solutionrelative:puntoventa.appweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A03EBFE-4DAD-4A12-A835-5F960BE0B64F}|PuntoVenta.AppWeb\\PuntoVenta.AppWeb.csproj|c:\\users\\juan_\\desktop\\puntoventacrud\\puntoventa.appweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A03EBFE-4DAD-4A12-A835-5F960BE0B64F}|PuntoVenta.AppWeb\\PuntoVenta.AppWeb.csproj|solutionrelative:puntoventa.appweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A03EBFE-4DAD-4A12-A835-5F960BE0B64F}|PuntoVenta.AppWeb\\PuntoVenta.AppWeb.csproj|c:\\users\\juan_\\desktop\\puntoventacrud\\puntoventa.appweb\\models\\viewmodels\\vmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A03EBFE-4DAD-4A12-A835-5F960BE0B64F}|PuntoVenta.AppWeb\\PuntoVenta.AppWeb.csproj|solutionrelative:puntoventa.appweb\\models\\viewmodels\\vmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F069FA5-F98F-4A6A-BED2-B5D38BE8CB93}|PuntoVenta.Negocio\\PuntoVenta.Negocio.csproj|c:\\users\\juan_\\desktop\\puntoventacrud\\puntoventa.negocio\\service\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F069FA5-F98F-4A6A-BED2-B5D38BE8CB93}|PuntoVenta.Negocio\\PuntoVenta.Negocio.csproj|solutionrelative:puntoventa.negocio\\service\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22CAAD06-6A41-4F0F-B45B-015FA9F7AD8F}|PuntoVenta.Da\\PuntoVenta.Da.csproj|c:\\users\\juan_\\desktop\\puntoventacrud\\puntoventa.da\\datacontext\\puntoventacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22CAAD06-6A41-4F0F-B45B-015FA9F7AD8F}|PuntoVenta.Da\\PuntoVenta.Da.csproj|solutionrelative:puntoventa.da\\datacontext\\puntoventacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F069FA5-F98F-4A6A-BED2-B5D38BE8CB93}|PuntoVenta.Negocio\\PuntoVenta.Negocio.csproj|c:\\users\\juan_\\desktop\\puntoventacrud\\puntoventa.negocio\\service\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F069FA5-F98F-4A6A-BED2-B5D38BE8CB93}|PuntoVenta.Negocio\\PuntoVenta.Negocio.csproj|solutionrelative:puntoventa.negocio\\service\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A03EBFE-4DAD-4A12-A835-5F960BE0B64F}|PuntoVenta.AppWeb\\PuntoVenta.AppWeb.csproj|c:\\users\\juan_\\desktop\\puntoventacrud\\puntoventa.appweb\\models\\viewmodels\\vmarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A03EBFE-4DAD-4A12-A835-5F960BE0B64F}|PuntoVenta.AppWeb\\PuntoVenta.AppWeb.csproj|solutionrelative:puntoventa.appweb\\models\\viewmodels\\vmarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.Negocio\\Service\\IClienteService.cs",
+              "RelativeDocumentMoniker": "PuntoVenta.Negocio\\Service\\IClienteService.cs",
+              "ToolTip": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.Negocio\\Service\\IClienteService.cs",
+              "RelativeToolTip": "PuntoVenta.Negocio\\Service\\IClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAMwA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T02:25:41.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PuntoVentaContext.cs",
+              "DocumentMoniker": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.Da\\DataContext\\PuntoVentaContext.cs",
+              "RelativeDocumentMoniker": "PuntoVenta.Da\\DataContext\\PuntoVentaContext.cs",
+              "ToolTip": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.Da\\DataContext\\PuntoVentaContext.cs",
+              "RelativeToolTip": "PuntoVenta.Da\\DataContext\\PuntoVentaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T02:11:28.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.Negocio\\Service\\ClienteService.cs",
+              "RelativeDocumentMoniker": "PuntoVenta.Negocio\\Service\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.Negocio\\Service\\ClienteService.cs",
+              "RelativeToolTip": "PuntoVenta.Negocio\\Service\\ClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T02:09:13.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VMArticulo.cs",
+              "DocumentMoniker": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.AppWeb\\Models\\ViewModels\\VMArticulo.cs",
+              "RelativeDocumentMoniker": "PuntoVenta.AppWeb\\Models\\ViewModels\\VMArticulo.cs",
+              "ToolTip": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.AppWeb\\Models\\ViewModels\\VMArticulo.cs",
+              "RelativeToolTip": "PuntoVenta.AppWeb\\Models\\ViewModels\\VMArticulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T02:01:41.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VMCliente.cs",
+              "DocumentMoniker": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.AppWeb\\Models\\ViewModels\\VMCliente.cs",
+              "RelativeDocumentMoniker": "PuntoVenta.AppWeb\\Models\\ViewModels\\VMCliente.cs",
+              "ToolTip": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.AppWeb\\Models\\ViewModels\\VMCliente.cs",
+              "RelativeToolTip": "PuntoVenta.AppWeb\\Models\\ViewModels\\VMCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T02:02:07.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.AppWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PuntoVenta.AppWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.AppWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PuntoVenta.AppWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAwCMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-03T02:01:23.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.AppWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PuntoVenta.AppWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\juan_\\Desktop\\PuntoVentaCrud\\PuntoVenta.AppWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PuntoVenta.AppWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAcwG4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T02:01:03.259Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

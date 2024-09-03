@@ -1,0 +1,11 @@
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\bin\Debug\net7.0\PuntoVenta.Models.deps.json
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\bin\Debug\net7.0\PuntoVenta.Models.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\bin\Debug\net7.0\PuntoVenta.Models.pdb
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\obj\Debug\net7.0\PuntoVenta.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\obj\Debug\net7.0\PuntoVenta.Models.AssemblyInfoInputs.cache
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\obj\Debug\net7.0\PuntoVenta.Models.AssemblyInfo.cs
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\obj\Debug\net7.0\PuntoVenta.Models.csproj.CoreCompileInputs.cache
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\obj\Debug\net7.0\PuntoVenta.Models.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\obj\Debug\net7.0\refint\PuntoVenta.Models.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\obj\Debug\net7.0\PuntoVenta.Models.pdb
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Models\obj\Debug\net7.0\ref\PuntoVenta.Models.dll

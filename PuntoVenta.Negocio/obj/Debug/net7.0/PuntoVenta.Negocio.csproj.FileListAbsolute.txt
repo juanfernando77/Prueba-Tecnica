@@ -1,0 +1,17 @@
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\bin\Debug\net7.0\PuntoVenta.Negocio.deps.json
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\bin\Debug\net7.0\PuntoVenta.Negocio.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\bin\Debug\net7.0\PuntoVenta.Negocio.pdb
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\obj\Debug\net7.0\PuntoVenta.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\obj\Debug\net7.0\PuntoVenta.Negocio.AssemblyInfoInputs.cache
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\obj\Debug\net7.0\PuntoVenta.Negocio.AssemblyInfo.cs
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\obj\Debug\net7.0\PuntoVenta.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\obj\Debug\net7.0\PuntoVenta.Negocio.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\obj\Debug\net7.0\refint\PuntoVenta.Negocio.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\obj\Debug\net7.0\PuntoVenta.Negocio.pdb
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\obj\Debug\net7.0\ref\PuntoVenta.Negocio.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\bin\Debug\net7.0\PuntoVenta.Da.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\bin\Debug\net7.0\PuntoVenta.Models.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\bin\Debug\net7.0\PuntoVenta.Da.pdb
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\bin\Debug\net7.0\PuntoVenta.Models.pdb
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\obj\Debug\net7.0\PuntoVenta.Negocio.csproj.AssemblyReference.cache
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Negocio\obj\Debug\net7.0\PuntoVen.2B810200.Up2Date

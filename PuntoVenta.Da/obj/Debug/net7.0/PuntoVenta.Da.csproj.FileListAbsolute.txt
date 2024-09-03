@@ -1,0 +1,17 @@
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\bin\Debug\net7.0\PuntoVenta.Da.deps.json
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\bin\Debug\net7.0\PuntoVenta.Da.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\bin\Debug\net7.0\PuntoVenta.Da.pdb
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\PuntoVenta.Da.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\PuntoVenta.Da.AssemblyInfoInputs.cache
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\PuntoVenta.Da.AssemblyInfo.cs
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\PuntoVenta.Da.csproj.CoreCompileInputs.cache
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\PuntoVenta.Da.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\refint\PuntoVenta.Da.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\PuntoVenta.Da.pdb
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\ref\PuntoVenta.Da.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\bin\Debug\net7.0\PuntoVenta.Da.runtimeconfig.json
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\PuntoVenta.Da.csproj.AssemblyReference.cache
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\PuntoVenta.Da.genruntimeconfig.cache
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\bin\Debug\net7.0\PuntoVenta.Models.dll
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\bin\Debug\net7.0\PuntoVenta.Models.pdb
+C:\Users\juan_\Desktop\PuntoVentaCrud\PuntoVenta.Da\obj\Debug\net7.0\PuntoVen.CB75D703.Up2Date
