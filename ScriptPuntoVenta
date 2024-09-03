@@ -1,0 +1,46 @@
+
+CREATE DATABASE PuntoVenta
+
+CREATE TABLE Clientes (
+    ClienteID INT PRIMARY KEY IDENTITY(1,1),
+    Nombre NVARCHAR(50) NOT NULL,
+    Apellidos NVARCHAR(50) NOT NULL,
+    Direccion NVARCHAR(100)
+);
+
+
+CREATE TABLE Tienda (
+    TiendaID INT PRIMARY KEY IDENTITY(1,1),
+    Sucursal NVARCHAR(50) NOT NULL,
+    Direccion NVARCHAR(100)
+);
+
+
+CREATE TABLE Articulos (
+    ArticuloID INT PRIMARY KEY IDENTITY(1,1),
+    Codigo NVARCHAR(50) NOT NULL,
+    Descripcion NVARCHAR(100),
+    Precio DECIMAL(10, 2) NOT NULL,
+    Imagen VARBINARY(MAX),
+    Stock INT NOT NULL
+);
+
+
+CREATE TABLE ArticuloTienda (
+    ArticuloID INT NOT NULL,
+    TiendaID INT NOT NULL,
+    Fecha DATE NOT NULL,
+    PRIMARY KEY (ArticuloID, TiendaID),
+    FOREIGN KEY (ArticuloID) REFERENCES Articulos(ArticuloID),
+    FOREIGN KEY (TiendaID) REFERENCES Tienda(TiendaID)
+);
+
+
+CREATE TABLE ClienteArticulo (
+    ClienteID INT NOT NULL,
+    ArticuloID INT NOT NULL,
+    Fecha DATE NOT NULL,
+    PRIMARY KEY (ClienteID, ArticuloID),
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(ClienteID),
+    FOREIGN KEY (ArticuloID) REFERENCES Articulos(ArticuloID)
+);
